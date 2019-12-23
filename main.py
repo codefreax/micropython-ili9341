@@ -4,7 +4,6 @@
 from ili934xnew import ILI9341, color565
 from machine import Pin, SPI
 import m5stack
-import tt14
 import glcdfont
 import tt14
 import tt24
