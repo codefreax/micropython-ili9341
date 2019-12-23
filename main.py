@@ -1,15 +1,16 @@
 # test of printing multiple fonts to the ILI9341 on an M5Stack using H/W SP
 # MIT License; Copyright (c) 2017 Jeffrey N. Magee
 
-from ili934xnew import ILI9341, color565
 from machine import Pin, SPI
-import m5stack
-import glcdfont
-import tt14
-import tt24
-import tt32
 
-fonts = [glcdfont,tt14,tt24,tt32]
+from .ili934xnew import ILI9341, color565
+from . import m5stack as board
+from . import glcdfont
+from . import tt14
+from . import tt24
+from . import tt32
+
+fonts = [glcdfont, tt14, tt24, tt32]
 
 text = 'Now is the time for all good men to come to the aid of the party.'
 

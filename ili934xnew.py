@@ -15,9 +15,10 @@
 
 import time
 import ustruct
-import glcdfont
 import framebuf
 from micropython import const
+
+from . import glcdfont
 
 _RDDSDR = const(0x0f) # Read Display Self-Diagnostic Result
 _SLPOUT = const(0x11) # Sleep Out
